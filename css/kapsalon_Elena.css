@@ -435,13 +435,13 @@ header .header-img .contact-wrap .number {
   display: none;
 }
 .menu_phone div {
-  width: 29px;
+  width: 34px;
   background-color: #212027;
-  height: 4px;
+  height: 3.2px;
   border-radius: 3px;
 }
 .menu_phone div + div {
-  margin-top: 2px;
+  margin-top: 5px;
 }
 .menu_phone_in {
   background-color: #212027;
@@ -510,7 +510,7 @@ header .header-img .contact-wrap .number {
   }
   header .top_bar .logo {
     max-width: none;
-    font-size: 20px;
+    font-size: 24px;
   }
   header .top_bar .nav {
     display: none;
@@ -593,7 +593,7 @@ header .header-img .contact-wrap .number {
   }
   .cost_works .price_wrap .price_item {
     position: relative;
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     align-items: center;
   }
@@ -644,7 +644,7 @@ header .header-img .contact-wrap .number {
     display: none;
   }
   .werkuren .uren {
-    margin-top: 133px;
+    margin-top: 63px;
     border: #212027 solid 1px;
     border-radius: 3px;
   }
@@ -658,6 +658,7 @@ header .header-img .contact-wrap .number {
   }
   .footer {
     height: 510px;
+    padding-bottom: 45px;
   }
   .footer .footer-box {
     margin: 0 auto;
@@ -666,6 +667,8 @@ header .header-img .contact-wrap .number {
     justify-content: space-between;
   }
   .footer .footer-box .footer-text {
+    margin-right: 0px;
+    width: 322px;
     margin-top: 52px;
     margin-left: 33px;
   }
@@ -675,10 +678,14 @@ header .header-img .contact-wrap .number {
     font-weight: 100;
   }
   .footer .footer-box .footer-navigation {
+    padding-top: 447px;
     display: flex;
     flex-direction: column;
-    height: 206.5px;
-    justify-content: space-between;
+    height: 30px;
+    justify-content: none;
+  }
+  .footer .footer-box .footer-navigation .footer-nav {
+    display: none;
   }
   .footer .footer-box .footer-navigation .footer-nav nav ul {
     display: none;

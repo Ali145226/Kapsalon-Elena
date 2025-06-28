@@ -71,14 +71,18 @@ const spanElements_background = document.querySelectorAll(".content_buttons a");
 
 function updateUnderlines_background() {
     let isElementVisible_background = false;
-
+    
     spanElements_background.forEach((spanElement_background) => {
         const rect_background = spanElement_background.getBoundingClientRect();
         const windowHeight_background = document.documentElement.clientHeight;
-
-        if (rect_background.bottom > 0 && rect_background.top < windowHeight_background) {
+        
+        if (
+            //rect_background.bottom > 0 && rect_background.top < windowHeight_background
+            rect_background.top<2500 && rect_background.top>0) {
             isElementVisible_background = true;
+            
         }
+        
     });
 
     if (isElementVisible_background) {
@@ -184,28 +188,35 @@ photos=document.querySelectorAll(".slider_two .slider-item img")
 const photosCount= photos.length 
 function rotation(){
     photos.forEach(function(item){
-        item.style.transform="rotate(10deg) scale(0.5)"
+        item.style.transform="rotate(10deg) scale(0.9)"
     })
 }
 
 function movePhotos(){
     let length_max_width= window.innerWidth
-    console.log(length_max_width)
+    
     rotation()
     photo_intex++
-    length_max_width<790?photos_work.style.left="-110px":photos_work.style.top="-110px"
+    if (length_max_width<790){
+        
+        photos_work.style.top="0"
+    }
+
+
     
     if (photo_intex>photosCount-2){
         photo_intex = 1
         // photos_work.style.top="-110px"
         
         photos_work.style.transition="2ms"
-        length_max_width<790?photos_work.style.left="-110px":photos_work.style.top="-110px"
+        length_max_width<790?photos_work.style.left="0":photos_work.style.top="-110px"
         
     }
     else{
+        console.log(photo_intex)
+        console.log(photos_work.style.left)
         length_max_width<790?photos_work.style.left=`${parseInt(photos_work.style.left)-(photos[photo_intex].naturalWidth)}px`:photos_work.style.top=`${parseInt(photos_work.style.top)-(photos[photo_intex].naturalHeight)}px`
-        
+        console.log(photos_work.style.left)
         // photos_work.style.top=`${parseInt(photos_work.style.top)-(photos[photo_intex].naturalHeight)}px`
         photos_work.style.transition="0.5s"
 
