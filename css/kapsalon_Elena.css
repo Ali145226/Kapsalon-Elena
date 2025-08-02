@@ -275,9 +275,6 @@ header .header-img .contact-wrap .number {
   text-align: left;
   font-weight: 700;
 }
-.cost_works .price_wrap .price_item .price table td {
-  white-space: nowrap;
-}
 .cost_works .price_wrap .price_item .price table td + td {
   padding-left: 100px;
 }
@@ -292,6 +289,8 @@ header .header-img .contact-wrap .number {
 }
 .cost_works .price_wrap .price_item:nth-child(even) img {
   position: absolute;
+}
+.cost_works .price_wrap .price_item:last-child img {
   transform: scale(1.1);
 }
 .reserveer {
@@ -380,33 +379,27 @@ header .header-img .contact-wrap .number {
   font-family: "Advent Pro", serif;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .footer .footer-box {
-  margin: 0 auto;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
-.footer .footer-box .footer-text {
-  margin-right: 433px;
-}
-.footer .footer-box .footer-text .BTW {
-  font-family: "Advent Pro", serif;
-  font-weight: 100;
-}
-.footer .footer-box .footer-navigation {
+.footer .footer-box .footer-one {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  height: 206.5px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-.footer .footer-box .footer-navigation .footer-nav nav ul {
+.footer .footer-box .footer-one .footer-nav nav ul {
   display: flex;
 }
-.footer .footer-box .footer-navigation .footer-nav nav ul li + li {
+.footer .footer-box .footer-one .footer-nav nav ul li + li {
   margin-left: 35px;
 }
-.footer .footer-box .footer-navigation .footer-nav nav a {
+.footer .footer-box .footer-one .footer-nav nav a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -414,7 +407,7 @@ header .header-img .contact-wrap .number {
   color: #eaeaea;
   text-transform: uppercase;
 }
-.footer .footer-box .footer-navigation .footer-nav nav a::after {
+.footer .footer-box .footer-one .footer-nav nav a::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -426,16 +419,26 @@ header .header-img .contact-wrap .number {
   transition: transform 0.25s ease;
   transform-origin: bottom left;
 }
-.footer .footer-box .footer-navigation .footer-nav nav a:hover::after {
+.footer .footer-box .footer-one .footer-nav nav a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-.footer .footer-box .footer-navigation .social {
+.footer .footer-box .footer-two {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+}
+.footer .footer-box .footer-two .social {
   display: flex;
   justify-content: right;
 }
-.footer .footer-box .footer-navigation .social a + a {
+.footer .footer-box .footer-two .social a + a {
   margin-left: 15px;
+}
+.footer .footer-box .footer-two .BTW {
+  font-family: "Advent Pro", serif;
+  font-weight: 100;
 }
 .menu_phone {
   display: none;
@@ -627,6 +630,7 @@ header .header-img .contact-wrap .number {
     margin-left: 50px;
   }
   .cost_works .price_wrap .price_item .price table {
+    width: 100%;
     font-family: "Advent Pro", serif;
     font-size: 24px;
   }
@@ -634,7 +638,8 @@ header .header-img .contact-wrap .number {
     display: none;
   }
   .cost_works .price_wrap .price_item .price table .price_phone_change {
-    display: block;
+    display: flex;
+    justify-content: space-between;
   }
   .cost_works .price_wrap .price_item .price table caption {
     text-align: left;
@@ -642,15 +647,11 @@ header .header-img .contact-wrap .number {
   }
   .cost_works .price_wrap .price_item .price table tr :last-child {
     color: #F88379;
-  }
-  .cost_works .price_wrap .price_item .price table td {
     white-space: nowrap;
   }
-  .cost_works .price_wrap .price_item .price table td + td {
-    padding-left: 0px;
-  }
-  .cost_works .price_wrap .price_item .price .last .last-table td + td {
-    padding-left: 0px;
+  .cost_works .price_wrap .price_item .price table tr {
+    display: flex;
+    justify-content: space-between;
   }
   .cost_works .price_wrap .price_item:nth-child(even) {
     flex-direction: column;
@@ -703,12 +704,10 @@ header .header-img .contact-wrap .number {
     margin-left: 33px;
   }
   .footer .footer-box .footer-text .BTW {
-    margin-top: 220px;
     font-family: "Advent Pro", serif;
     font-weight: 100;
   }
   .footer .footer-box .footer-navigation {
-    padding-top: 447px;
     display: flex;
     flex-direction: column;
     height: 30px;
