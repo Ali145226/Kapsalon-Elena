@@ -276,6 +276,7 @@ header .header-img .contact-wrap .number {
   font-weight: 700;
 }
 .cost_works .price_wrap .price_item .price table td + td {
+  white-space: nowrap;
   padding-left: 100px;
 }
 .cost_works .price_wrap .price_item .price .last .last-table td + td {
@@ -353,17 +354,23 @@ header .header-img .contact-wrap .number {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 35px;
 }
 .werkuren .content_titel {
   margin-top: 225px;
 }
 .werkuren .uren {
-  margin-top: 133px;
   border: #212027 solid 1px;
   border-radius: 3px;
+  margin-top: 133px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .werkuren .uren p {
-  margin: 60px 416px;
+  white-space: nowrap;
+  margin: 60px 0px;
   max-width: 339px;
   font-family: "Advent Pro", serif;
   font-size: 36px;
@@ -379,27 +386,30 @@ header .header-img .contact-wrap .number {
   font-family: "Advent Pro", serif;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .footer .footer-box {
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-}
-.footer .footer-box .footer-one {
-  width: 100%;
-  display: flex;
   justify-content: space-around;
 }
-.footer .footer-box .footer-one .footer-nav nav ul {
+.footer .footer-box .footer-text .BTW {
+  font-family: "Advent Pro", serif;
+  font-weight: 100;
+}
+.footer .footer-box .footer-navigation {
+  display: flex;
+  flex-direction: column;
+  height: 206.5px;
+  justify-content: space-between;
+}
+.footer .footer-box .footer-navigation .footer-nav nav ul {
   display: flex;
 }
-.footer .footer-box .footer-one .footer-nav nav ul li + li {
+.footer .footer-box .footer-navigation .footer-nav nav ul li + li {
   margin-left: 35px;
 }
-.footer .footer-box .footer-one .footer-nav nav a {
+.footer .footer-box .footer-navigation .footer-nav nav a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -407,7 +417,7 @@ header .header-img .contact-wrap .number {
   color: #eaeaea;
   text-transform: uppercase;
 }
-.footer .footer-box .footer-one .footer-nav nav a::after {
+.footer .footer-box .footer-navigation .footer-nav nav a::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -419,26 +429,16 @@ header .header-img .contact-wrap .number {
   transition: transform 0.25s ease;
   transform-origin: bottom left;
 }
-.footer .footer-box .footer-one .footer-nav nav a:hover::after {
+.footer .footer-box .footer-navigation .footer-nav nav a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-.footer .footer-box .footer-two {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: end;
-}
-.footer .footer-box .footer-two .social {
+.footer .footer-box .footer-navigation .social {
   display: flex;
   justify-content: right;
 }
-.footer .footer-box .footer-two .social a + a {
+.footer .footer-box .footer-navigation .social a + a {
   margin-left: 15px;
-}
-.footer .footer-box .footer-two .BTW {
-  font-family: "Advent Pro", serif;
-  font-weight: 100;
 }
 .menu_phone {
   display: none;
@@ -622,12 +622,15 @@ header .header-img .contact-wrap .number {
     align-items: center;
   }
   .cost_works .price_wrap .price_item img {
+    width: 100%;
     position: sticky;
   }
   .cost_works .price_wrap .price_item .price {
     max-width: 850px;
     min-width: 300px;
-    margin-left: 50px;
+    margin-left: 35px;
+    margin-right: 35px
+              ;
   }
   .cost_works .price_wrap .price_item .price table {
     width: 100%;
@@ -657,7 +660,7 @@ header .header-img .contact-wrap .number {
     flex-direction: column;
   }
   .cost_works .price_wrap .price_item:nth-child(even) .price {
-    margin-right: 0px;
+    margin-right: 35px;
   }
   .cost_works .price_wrap .price_item:nth-child(even) img {
     position: sticky;
@@ -688,20 +691,17 @@ header .header-img .contact-wrap .number {
     text-align: center;
   }
   .footer {
-    height: 510px;
-    padding-bottom: 45px;
+    padding: 52px 33px 52px 33px;
   }
   .footer .footer-box {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    height: 100%;
+    align-items: end;
   }
   .footer .footer-box .footer-text {
-    margin-right: 0px;
-    width: 322px;
-    margin-top: 52px;
-    margin-left: 33px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .footer .footer-box .footer-text .BTW {
     font-family: "Advent Pro", serif;
@@ -710,14 +710,14 @@ header .header-img .contact-wrap .number {
   .footer .footer-box .footer-navigation {
     display: flex;
     flex-direction: column;
-    height: 30px;
-    justify-content: none;
+    height: 206.5px;
+    justify-content: space-between;
   }
-  .footer .footer-box .footer-navigation .footer-nav {
+  .footer .footer-box .footer-navigation .footer-nav nav {
     display: none;
   }
   .footer .footer-box .footer-navigation .footer-nav nav ul {
-    display: none;
+    display: flex;
   }
   .footer .footer-box .footer-navigation .footer-nav nav ul li + li {
     margin-left: 35px;

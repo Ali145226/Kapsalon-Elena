@@ -96,8 +96,11 @@ updateUnderlines();
 //     console.log(scroll);
 
 const observer = new IntersectionObserver((entries) => {
+    
     entries.forEach(entry => {
+        console.log(entry)
       if (entry.isIntersecting) {
+        
         document.body.style.backgroundColor = "#212027";
         document.documentElement.style.setProperty('--black', '#FCFAF7');
       } else{
@@ -113,7 +116,7 @@ const observer = new IntersectionObserver((entries) => {
     observer.observe(el);
   }
   )
-  
+
   
 
 

@@ -379,6 +379,7 @@ header{
         }
   
         .price {
+        
           max-width: 850px;
           min-width: 300px;
           margin-left: 50px;
@@ -399,6 +400,7 @@ header{
             }
   
             td + td {
+                white-space: nowrap;
               padding-left: 100px;
             }
           }
@@ -516,16 +518,24 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 35px;
+    
     .content_titel{
         margin-top: 225px;
     }
     .uren{
-        margin-top: 133px;
         border: #212027 solid 1px;
         border-radius: 3px;
+        margin-top: 133px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
         
         p{
-            margin: 60px 416px;
+            white-space: nowrap;
+            margin: 60px 0px;
             max-width: 339px;
             font-family: "Advent Pro", serif;
             font-size: 36px;
@@ -544,20 +554,26 @@ header{
     font-family: "Advent Pro", serif;
     display: flex;
     align-items: center;
-    justify-content: center;
     .footer-box{
+        // margin: 0 auto;
         width: 100%;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        .footer-one{
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
+        justify-content: space-around;
+        .footer-text{
+            // margin-right: 433px;
 
+            .BTW{
+                font-family: "Advent Pro", serif;
+                font-weight: 100;
+            }
+        }
+        .footer-navigation{
+            display: flex;
+            flex-direction: column;
+            height: 206.5px;
+            justify-content: space-between;
             .footer-nav{
-                
                 nav{
                     //display: flex;
                     ul{
@@ -597,16 +613,6 @@ header{
     
                 }
             }
-        }
-        .footer-two{
-            width: 100%;
-            display: flex;
-            
-            justify-content: space-around;
-            align-items: end;
-            
-            
-            
             .social{
                 display: flex;
                 justify-content: right;
@@ -614,10 +620,6 @@ header{
                     &+a{margin-left: 15px;}
                 }
                 
-            }
-            .BTW{
-                font-family: "Advent Pro", serif;
-                font-weight: 100;
             }
 
         }
@@ -848,14 +850,16 @@ header{
             
             
             img {
-              
+              width: 100%;
               position: sticky;
             }
       
             .price {
               max-width: 850px;
               min-width: 300px;
-              margin-left: 50px;
+              margin-left: 35px;
+              margin-right: 35px
+              ;
               table {
                 width: 100%;
                 font-family: "Advent Pro", serif;
@@ -910,7 +914,7 @@ header{
           .price_item:nth-child(even) {
             flex-direction: column;
             .price{
-                margin-right: 0px;
+                margin-right: 35px;
             }
             
             img {
@@ -976,42 +980,33 @@ header{
         }
     }
     .footer{
-
-        height: 510px;
-        padding-bottom: 45px;
-
+        padding: 52px 33px 52px 33px;
         .footer-box{
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            
+            height: 100%;
+            align-items: end;
             .footer-text{
-                margin-right: 0px;
-                width: 322px;
-                margin-top: 52px;
-                // padding-bottom: 45px;
-                margin-left: 33px;
+                height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
                 .BTW{
-                    // margin-top: 220px;
                     font-family: "Advent Pro", serif;
                     font-weight: 100;
                 }
             }
             .footer-navigation{
-                // padding-top: 447px;
                 display: flex;
                 flex-direction: column;
-                height: 30px;
-                justify-content: none;
-                
+                height: 206.5px;
+                justify-content: space-between;
                 .footer-nav{
-                    
-                    display: none;
                     nav{
+                        display: none;
                         //display: flex;
                         ul{
                             
-                            display: none;
+                            display: flex;
                             
                             li{
                                 & + li{margin-left: 35px;}
