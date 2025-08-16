@@ -98,8 +98,8 @@ updateUnderlines();
 const observer = new IntersectionObserver((entries) => {
     
     entries.forEach(entry => {
-        console.log(entry)
-      if (entry.isIntersecting) {
+        // console.log(screen_width)
+      if (entry.isIntersecting && screen_width>790) {
         
         document.body.style.backgroundColor = "#212027";
         document.documentElement.style.setProperty('--black', '#FCFAF7');
@@ -111,7 +111,7 @@ const observer = new IntersectionObserver((entries) => {
   });
   
   // Target element
-  const spanElements_background = document.querySelectorAll(".content_buttons ");
+  const spanElements_background = document.querySelectorAll(".my_work .content_titel ");
   spanElements_background.forEach(el=>{
     observer.observe(el);
   }
@@ -217,8 +217,14 @@ function movePhotos(){
 
 
 function movePhotos_photos() {
+    
   photo_intex++;
-
+  photos[1].style.height=`${screen_width}px`
+  photos[1].style.width=`${screen_width-100}px`
+  photos[photo_intex].style.width=`${screen_width-100}px`
+    photos[photo_intex].style.height=`${screen_width}px`
+ 
+  console.log(photos[photo_intex].style.width)
   if (photo_intex > photosCount - 2) {
     photo_intex = 1;
     photos_work.style.left = "0px";

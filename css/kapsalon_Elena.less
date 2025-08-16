@@ -351,6 +351,7 @@ header{
 // }
 
 .cost_works {
+    
     margin-top: 300px;
     margin-bottom: 355px;
     .content_titel {
@@ -379,7 +380,7 @@ header{
         }
   
         .price {
-        
+            gap: 10xp;
           max-width: 850px;
           min-width: 300px;
           margin-left: 50px;
@@ -771,16 +772,18 @@ header{
     }
     
     .my_work{
+        padding: 0px 0px;
+        
         height: 100%;
         min-width: 100%;
-
+        background-color: #212027;
         grid-template-areas: 
         'content_one'
         'content_three'
         'content_two'
         ;
-        grid-template-rows: 250px 600px 50px;
-        gap: 100px;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        
         align-items: center;
         .content{
            display: flex;
@@ -804,12 +807,15 @@ header{
                 
                 position: relative;
                display: flex;
+               
+               
                 .slider-item{
+                    display: flex;
+                    justify-content: center;
                     padding: 0px 0px 0px;
                     flex: 0 0 100%;
                     img{
-                        width: 550px;
-                        height: 550px;
+                        
                     }
                 }
             }
