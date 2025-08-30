@@ -572,7 +572,7 @@ header .header-img .contact-wrap .number {
     min-width: 100%;
     background-color: #212027;
     grid-template-areas: 'content_one' 'content_three' 'content_two';
-    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 2fr 0.1fr;
     align-items: center;
   }
   .my_work .content {
@@ -587,7 +587,7 @@ header .header-img .contact-wrap .number {
   .my_work .slider_two {
     padding-left: 0px;
     width: 550px;
-    height: 550px;
+    height: 63%;
     overflow: hidden;
   }
   .my_work .slider_two .slider-wrap {
