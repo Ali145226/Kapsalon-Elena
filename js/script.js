@@ -220,8 +220,8 @@ function movePhotos_photos() {
     
   photo_intex++;
   photos[1].style.height=`${screen_width}px`
-  photos[1].style.width=`${screen_width-100}px`
-  photos[photo_intex].style.width=`${screen_width-100}px`
+  photos[1].style.width=`${screen_width-screen_width*0.1}px`
+  photos[photo_intex].style.width=`${screen_width-screen_width*0.1}px`
     photos[photo_intex].style.height=`${screen_width}px`
  
   console.log(photos[photo_intex].style.width)
