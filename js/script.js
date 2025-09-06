@@ -99,7 +99,7 @@ const observer = new IntersectionObserver((entries) => {
     
     entries.forEach(entry => {
         // console.log(screen_width)
-      if (entry.isIntersecting && screen_width>790) {
+      if (entry.isIntersecting && screen_width>1080) {
         
         document.body.style.backgroundColor = "#212027";
         document.documentElement.style.setProperty('--black', '#FCFAF7');

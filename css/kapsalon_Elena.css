@@ -566,7 +566,7 @@ header .header-img .contact-wrap .number {
     width: 274px;
   }
   .my_work {
-    padding: 0px 0px;
+    padding: 0px 0px 50px;
     justify-content: center;
     height: 100%;
     min-width: 100%;
@@ -762,5 +762,19 @@ header .header-img .contact-wrap .number {
   }
   .footer .footer-box .footer-navigation .social a + a {
     margin-left: 15px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .about_me img {
+    margin-right: 128px;
+    height: 100%;
+    left: 27px;
+  }
+  .about_me .about_content .describion {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+  .my_work {
+    background-color: #212027;
   }
 }
