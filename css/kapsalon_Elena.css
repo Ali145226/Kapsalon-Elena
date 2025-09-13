@@ -379,7 +379,7 @@ header .header-img .contact-wrap .number {
   font-weight: 600;
   text-align: center;
 }
-.footer {
+footer {
   margin-top: 225px;
   height: 447px;
   background-color: #212027;
@@ -389,29 +389,29 @@ header .header-img .contact-wrap .number {
   display: flex;
   align-items: center;
 }
-.footer .footer-box {
+footer .footer-box {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.footer .footer-box .footer-text .BTW {
+footer .footer-box .footer-text .BTW {
   font-family: "Advent Pro", serif;
   font-weight: 100;
 }
-.footer .footer-box .footer-navigation {
+footer .footer-box .footer-navigation {
   display: flex;
   flex-direction: column;
   height: 206.5px;
   justify-content: space-between;
 }
-.footer .footer-box .footer-navigation .footer-nav nav ul {
+footer .footer-box .footer-navigation .footer-nav nav ul {
   display: flex;
 }
-.footer .footer-box .footer-navigation .footer-nav nav ul li + li {
+footer .footer-box .footer-navigation .footer-nav nav ul li + li {
   margin-left: 35px;
 }
-.footer .footer-box .footer-navigation .footer-nav nav a {
+footer .footer-box .footer-navigation .footer-nav nav a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -419,7 +419,7 @@ header .header-img .contact-wrap .number {
   color: #eaeaea;
   text-transform: uppercase;
 }
-.footer .footer-box .footer-navigation .footer-nav nav a::after {
+footer .footer-box .footer-navigation .footer-nav nav a::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -431,15 +431,15 @@ header .header-img .contact-wrap .number {
   transition: transform 0.25s ease;
   transform-origin: bottom left;
 }
-.footer .footer-box .footer-navigation .footer-nav nav a:hover::after {
+footer .footer-box .footer-navigation .footer-nav nav a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-.footer .footer-box .footer-navigation .social {
+footer .footer-box .footer-navigation .social {
   display: flex;
   justify-content: right;
 }
-.footer .footer-box .footer-navigation .social a + a {
+footer .footer-box .footer-navigation .social a + a {
   margin-left: 15px;
 }
 .menu_phone {
@@ -700,39 +700,39 @@ header .header-img .contact-wrap .number {
     font-weight: 600;
     text-align: center;
   }
-  .footer {
+  footer {
     padding: 52px 33px 52px 33px;
   }
-  .footer .footer-box {
+  footer .footer-box {
     height: 100%;
     align-items: end;
   }
-  .footer .footer-box .footer-text {
+  footer .footer-box .footer-text {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  .footer .footer-box .footer-text .BTW {
+  footer .footer-box .footer-text .BTW {
     font-family: "Advent Pro", serif;
     font-weight: 100;
   }
-  .footer .footer-box .footer-navigation {
+  footer .footer-box .footer-navigation {
     display: flex;
     flex-direction: column;
     height: 206.5px;
     justify-content: space-between;
   }
-  .footer .footer-box .footer-navigation .footer-nav nav {
+  footer .footer-box .footer-navigation .footer-nav nav {
     display: none;
   }
-  .footer .footer-box .footer-navigation .footer-nav nav ul {
+  footer .footer-box .footer-navigation .footer-nav nav ul {
     display: flex;
   }
-  .footer .footer-box .footer-navigation .footer-nav nav ul li + li {
+  footer .footer-box .footer-navigation .footer-nav nav ul li + li {
     margin-left: 35px;
   }
-  .footer .footer-box .footer-navigation .footer-nav nav a {
+  footer .footer-box .footer-navigation .footer-nav nav a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -740,7 +740,7 @@ header .header-img .contact-wrap .number {
     color: #eaeaea;
     text-transform: uppercase;
   }
-  .footer .footer-box .footer-navigation .footer-nav nav a::after {
+  footer .footer-box .footer-navigation .footer-nav nav a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -752,15 +752,15 @@ header .header-img .contact-wrap .number {
     transition: transform 0.25s ease;
     transform-origin: bottom left;
   }
-  .footer .footer-box .footer-navigation .footer-nav nav a:hover::after {
+  footer .footer-box .footer-navigation .footer-nav nav a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-  .footer .footer-box .footer-navigation .social {
+  footer .footer-box .footer-navigation .social {
     display: flex;
     justify-content: right;
   }
-  .footer .footer-box .footer-navigation .social a + a {
+  footer .footer-box .footer-navigation .social a + a {
     margin-left: 15px;
   }
 }
